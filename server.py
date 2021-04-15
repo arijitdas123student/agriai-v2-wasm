@@ -20,5 +20,11 @@ Handler.extensions_map={
 
 httpd = socketserver.TCPServer(("", PORT), Handler)
 
-print("serving at port 8082", PORT)
+print("Welcome to AgriAI V2 Setup")
+print("Made using Edge Impulse")
+print("Credits : Arijit Das, Jan Jongboom")
+print("Wait until we setup everything for you")
+print("serving at port ", PORT)
+print("Visit http://localhost:8082/ to check out the live webserver")
+
 httpd.serve_forever()
