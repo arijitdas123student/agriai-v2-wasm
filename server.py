@@ -21,4 +21,5 @@ Handler.extensions_map={
 httpd = socketserver.TCPServer(("", PORT), Handler)
 
 print("serving at port 8082", PORT)
+print("Visit http://localhost:8082 to view the live webserver")
 httpd.serve_forever()
