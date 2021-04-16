@@ -16,13 +16,20 @@
 </head>
 <body>
   <p id="damselfly" style="display: none">Spray Pesticide</p>  
-  <div class="inlin">
-		<video id="video" width="640" height="480" autoplay></video>
-	</div>
-		<div class="inlin">
-			<canvas id="canvas" width="640" height="480"></canvas>
-		</div><br>
-		<button id="snap">Capture</button>
+  <div id="main">
+      
+    <video id="video" playsinline="" style="     
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      width: auto;
+      height: auto;
+    "></video>
+      
+    <canvas id="myOnTopOutput" style=" background-color:white; border:black 3px solid;" ></canvas>  <!--  position:absolute; top:0; left:0;   -->  
+    
+    <canvas id="output"  ></canvas>  
+    
+    <canvas id="myColorCanvas"  ></canvas>   <br>
 		
 	<script>
 		var video = document.getElementById('video');
