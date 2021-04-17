@@ -6,37 +6,7 @@
     <title>AgriAI V2 Browser inference demo</title>
 </head>
 <body>
-  <p id="damselfly" style="display: none">Result : Damselfly found! Spraying Pesticide.</p>
-  <div class="inlin">
-		<video id="video" width="640" height="480" autoplay></video>
-	</div>
-  <p style="border: black;">Captured Image</p>
-	<div class="inlin">
-			<canvas id="canvas" width="640" height="480"></canvas>
-		</div><br>
-
-		<button id="snap">Capture</button>
-
-	<script>
-		var video = document.getElementById('video');
-
-		// Get access to the camera!
-		if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-		    navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {        
-		        video.srcObject = stream;
-		        video.play();
-		    });
-		}
-
-		var canvas = document.getElementById('canvas');
-		var context = canvas.getContext('2d');
-		var video = document.getElementById('video');
-
-		// Trigger photo take
-		document.getElementById("snap").addEventListener("click", function() {
-			context.drawImage(video, 0, 0, 550, 480);
-		});
-	</script>
+  <p id="damselfly" style="display: none">Spray Pesticide</p>
     <script src="edge-impulse-standalone.js"></script>
     <script src="run-impulse.js"></script>
     <script>
@@ -52,10 +22,6 @@
               document.querySelector('#damselfly').style.display = 'none';
             }
         })();
-	    </script>
-      <p>
-	    <a href="https://github.com/arijitdas123student/agriai-v2-wasm">Source Code</a><br>
-	    <a href="https://github.com/arijitdas123student">Developed by : Arijit Das</a><br>
-      </p>
+    </script>
 </body>
 </html>
