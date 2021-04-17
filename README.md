@@ -17,7 +17,9 @@ $ cd agriai-v2-wasm/
 $ python3 server.py
 ```
 Finally visit [localhost:8082](http://localhost:8082) in order to view the live webpage.
-### Credits
-・ Arijit Das
 
-・ Jan Jongboom
+To close the webpage press ```Ctrl/Cmd + C``` on your Keyboard to exit out of the web interface.
+### Credits
+・ [Arijit Das](https://github.com/arijitdas123student)
+
+・ [Jan Jongboom](https://github.com/janjongboom)
