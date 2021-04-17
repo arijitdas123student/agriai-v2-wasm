@@ -6,22 +6,17 @@
     <title>AgriAI V2 Browser inference demo</title>
 </head>
 <body>
-  <p id="damselfly" style="display: none">Damselfly found! Spraying Pesticide.</p>
-    <div id="main">
-      
-    <video id="video" playsinline="" style="     
-      -webkit-transform: scaleX(-1);
-      transform: scaleX(-1);
-      width: auto;
-      height: auto;
-    "></video>
-      
-    <canvas id="myOnTopOutput" style=" background-color:white; border:black 3px solid;" ></canvas>  <!--  position:absolute; top:0; left:0;   -->  
-    
-    <canvas id="output"  ></canvas>  
-    
-    <canvas id="myColorCanvas"  ></canvas>   <br>
-		
+  <p id="damselfly" style="display: none">Result : Damselfly found! Spraying Pesticide.</p>
+  <div class="inlin">
+		<video id="video" width="640" height="480" autoplay></video>
+	</div>
+  <p style="border: black;">Captured Image</p>
+	<div class="inlin">
+			<canvas id="canvas" width="640" height="480"></canvas>
+		</div><br>
+
+		<button id="snap">Capture</button>
+
 	<script>
 		var video = document.getElementById('video');
 
@@ -39,7 +34,7 @@
 
 		// Trigger photo take
 		document.getElementById("snap").addEventListener("click", function() {
-			context.drawImage(video, 0, 0, 640, 480);
+			context.drawImage(video, 0, 0, 550, 480);
 		});
 	</script>
     <script src="edge-impulse-standalone.js"></script>
@@ -58,7 +53,9 @@
             }
         })();
 	    </script>
+      <p>
 	    <a href="https://github.com/arijitdas123student/agriai-v2-wasm">Source Code</a><br>
 	    <a href="https://github.com/arijitdas123student">Developed by : Arijit Das</a><br>
+      </p>
 </body>
 </html>
