@@ -2,7 +2,7 @@ import http.server
 from http.server import HTTPServer, BaseHTTPRequestHandler
 import socketserver
 
-PORT = 8082
+PORT = 8080
 
 Handler = http.server.SimpleHTTPRequestHandler
 
@@ -25,6 +25,6 @@ print("Made using Edge Impulse")
 print("Credits : Arijit Das, Jan Jongboom")
 print("Wait until we setup everything for you")
 print("serving at port ", PORT)
-print("Visit http://localhost:8082/ to check out the live webserver")
+print("Visit http://localhost:8080/ to check out the live webserver")
 
 httpd.serve_forever()
