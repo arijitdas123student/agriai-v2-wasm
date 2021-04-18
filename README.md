@@ -1,7 +1,7 @@
 # agriai-v2-wasm
 WebAssembly Package for project AgriAI v2. Made using @edgeimpulse.
 ###### Edge Impulse Studio public project link is [here](https://studio.edgeimpulse.com/public/12041/latest/deployment)
-### WebPage
+### Webpage 🌐
 Visit [this webpage](https://arijitdas.me/agriai-v2-wasm/) in order to access the live webpage stream directly from GitHub Pages.
 ### Dependencies to run our model locally
 ・ Python 3.6 or more
@@ -9,7 +9,7 @@ Visit [this webpage](https://arijitdas.me/agriai-v2-wasm/) in order to access th
 ・ Chrome/FireFox (Latest Install)
 
 ・ Git Bash installed on the machine locally
-### Local Build
+### Local Build 🏗️
 Follow these steps to run our program :
 ```
 $ git clone https://github.com/arijitdas123student/agriai-v2-wasm.git
@@ -23,3 +23,5 @@ To close the webpage press ```Ctrl/Cmd + C``` on your Keyboard to exit out of th
 ・ [Arijit Das](https://github.com/arijitdas123student)
 
 ・ [Jan Jongboom](https://github.com/janjongboom)
+
+・ [Jeremy Ellis](https://github.com/hpssjellis)
