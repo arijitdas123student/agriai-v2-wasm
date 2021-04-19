@@ -1,6 +1,6 @@
 # agriai-v2-wasm
 WebAssembly Package for project AgriAI v2. Made using @edgeimpulse.
-###### Edge Impulse Studio public project link is [here](https://studio.edgeimpulse.com/public/12041/latest/deployment)
+> Edge Impulse Studio public project link is [here](https://studio.edgeimpulse.com/public/12041/latest/deployment)
 ### WebPage
 Visit [this webpage](https://arijitdas.me/agriai-v2-wasm/) in order to access the live webpage stream directly from GitHub Pages.
 ### Dependencies to run our model locally
